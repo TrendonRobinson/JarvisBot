@@ -4,7 +4,7 @@ const config = require("./config.json");
 console.log(config.prefix)
 const pf = "Jarvis"
 
-bot.login("NTc0NDg5MzE5NzM0MjQ3NDI0.XRKKZw.m1Rh9pKOsuSiurllscT0LUbzf9c")
+bot.login(process.env.BOT_TOKEN)//Tc0NDg5MzE5NzM0MjQ3NDI0.XRKKZw.m1Rh9pKOsuSiurllscT0LUbzf9
 
 
 bot.on('message', (msg) => {
