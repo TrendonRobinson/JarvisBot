@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const config = require("./config.json");
-console.log(config.prefix)
+//console.log(config.prefix)
 const pf = "Jarvis"
 
 bot.login(process.env.BOT_TOKEN)
