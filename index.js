@@ -223,7 +223,7 @@ function setup(arguments, message){
                 });
             }
             Channelmaker("Important", ["⚖️ Rules ⚖️", "🎬 Sneaks 🎬", "🗣 Announcements 🗣","📱 Social 📱"])
-            Channelmaker("Misc", ["🤝 Chat 🤝", "🤖 Bot-Commands 🤖", "❓ QnA ❓", "🗳️ Polls 🗳️"])
+            Channelmaker("Misc", ["🤝 Chat 🤝", "🤖 Bot-Commands 🤖", "❓ QnA ❓", "🗳️ Polls 🗳️", "💡 suggestions 💡"])
             Channelmaker("Events", ["🎁 Giveaways 🎁", "🎮 Game Night 🎮", "🎥 Streams 🎥"])
         }
     }else{
