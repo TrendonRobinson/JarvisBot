@@ -62,13 +62,16 @@ function processCommand(msg) {
     else if ((primary == ".youtube") || (primary == ".y")){
         youtubecmd(arguments, msg)
     }
-    else if ((primary == ".addrole" ) || (primary == ".ar" )) {
-        //446827734124068865
-        arole(arguments, msg)
-    }
-    else if ((primary == ".makecategory" ) || (primary == ".mcat" )) {
-        //446827734124068865
-        makeCategory(arguments, msg)
+    // else if ((primary == ".addrole" ) || (primary == ".ar" )) {
+    //     //446827734124068865
+    //     arole(arguments, msg)
+    // }
+    // else if ((primary == ".makecategory" ) || (primary == ".mcat" )) {
+    //     //446827734124068865
+    //     makeCategory(arguments, msg)
+    // }
+    else if ((primary == ".luasearch" ) || (primary == ".ls" )) {
+        helpinghand(arguments,message)
     }
     else if ((primary == ".setup" ) || (primary == ".set" )) {
         //446827734124068865
@@ -83,7 +86,7 @@ function processCommand(msg) {
 function byeguys(arguments, message){
     var server = message.guild;
     var name = message.author.username;
-    let searchquery = arguments.join("-")
+    let searchquery = arguments.join("")
     console.log(message.author.id)
     console.log(server.ownerID)
     if (message.author.id == server.owner.id){
@@ -95,6 +98,40 @@ function byeguys(arguments, message){
        message.channel.send("Your not the owner of the Server")
     }
 }
+function helpinghand(arguments, message){
+    var server = message.guild;
+    var name = message.author.username
+    //Vector (A - B).Unit gives you a direction vector of B pointing to A
+    console.log(arguments)
+    if (arguments.length == 0) {
+        msg.channel.send({embed: {
+            color: 3066993,
+            author: {
+                name: bot.user.username,
+                icon_url: bot.user.displayAvatarURL
+            },
+            title: "How to use `.luasearch` or `.luas` command:",
+            fields: [{
+                name: "Example:",
+                value: "`Jarvis.luas .Unit` or `Jarvis.luasearch ` will return search results"
+              }
+            ],
+            timestamp: new Date(),
+            footer: {
+                icon_url: bot.user.displayAvatarURL ,
+                text: "© Jarvis"
+            }
+          }
+        });
+    }
+    else {
+        var newmsg = arguments.toLowerCase()
+        if (newmsg.includes("unit")) {
+            message.channel.send("Vector (A - B).Unit gives you a direction vector of B pointing to A")
+        }
+    };
+}
+    
 // function arole(arguments, msg){
 //     if (arguments.length == 0) {
 //         msg.channel.send("Insufficient arguements, if needed use `Jarvis.h` or `Jarvis.help` command for usage")
