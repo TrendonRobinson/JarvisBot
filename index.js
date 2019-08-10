@@ -125,6 +125,7 @@ function helpinghand(arguments, message){
         });
     }
     else {
+        console.log(message)
         var newmsg = arguments.toLowerCase()
         if (newmsg.includes("unit")) {
             message.channel.send("Vector (A - B).Unit gives you a direction vector of B pointing to A")
