@@ -71,7 +71,7 @@ function processCommand(msg) {
     //     makeCategory(arguments, msg)
     // }
     else if ((primary == ".luasearch" ) || (primary == ".ls" )) {
-        helpinghand(arguments,message)
+        helpinghand(arguments, msg)
     }
     else if ((primary == ".setup" ) || (primary == ".set" )) {
         //446827734124068865
@@ -110,10 +110,10 @@ function helpinghand(arguments, message){
                 name: bot.user.username,
                 icon_url: bot.user.displayAvatarURL
             },
-            title: "How to use `.luasearch` or `.luas` command:",
+            title: "How to use `.luasearch` or `.ls` command:",
             fields: [{
                 name: "Example:",
-                value: "`Jarvis.luas .Unit` or `Jarvis.luasearch ` will return search results"
+                value: "`Jarvis.ls .Unit` or `Jarvis.luasearch ` will return search results"
               }
             ],
             timestamp: new Date(),
