@@ -104,7 +104,7 @@ function helpinghand(arguments, message){
     //Vector (A - B).Unit gives you a direction vector of B pointing to A
     console.log(arguments)
     if (arguments.length == 0) {
-        msg.channel.send({embed: {
+        message.channel.send({embed: {
             color: 3066993,
             author: {
                 name: bot.user.username,
