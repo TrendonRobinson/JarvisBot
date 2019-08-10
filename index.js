@@ -113,7 +113,7 @@ function helpinghand(arguments, message){
             title: "How to use `.luasearch` or `.ls` command:",
             fields: [{
                 name: "Example:",
-                value: "`Jarvis.ls .Unit` or `Jarvis.luasearch ` will return search results"
+                value: "`Jarvis.ls Unit` or `Jarvis.luasearch Unit` will return search results"
               }
             ],
             timestamp: new Date(),
@@ -125,7 +125,7 @@ function helpinghand(arguments, message){
         });
     }
     else {
-        console.log(message)
+        console.log(arguments)
         var newmsg = arguments.toLowerCase()
         if (newmsg.includes("unit")) {
             message.channel.send("Vector (A - B).Unit gives you a direction vector of B pointing to A")
