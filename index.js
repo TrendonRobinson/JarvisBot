@@ -177,6 +177,10 @@ function helpcmd(arguments, msg){
                 //value: "`Jarvis.makerole` This is an example or `Jarvis.mr This is an example` will return  a Youtube ////Search\n"
               //}
               {
+                name: "Command:`.luasearch` or `.ls`",
+                value: "`Jarvis.ls Unit` or `Jarvis.luasearch Unit` will return search results"
+              },
+              {
                 name: "Command:`.makecategory` or `.mcat` ",
                 value: "`Jarvis.makecategory chicken feet` This is an example or `Jarvis.mcat garbage toes`"
               },
